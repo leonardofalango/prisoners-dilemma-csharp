@@ -24,7 +24,7 @@ public class World
             p2.Coin -= 1;
             p1.Recebe(3);
             p2.Recebe(-1);
-            this.TotalCoins += 4;
+            this.TotalCoins += 3;
         }
         if (!p1.IsPlaying() && p2.IsPlaying())
         {
@@ -32,7 +32,7 @@ public class World
             p2.Coin += 4;
             p1.Recebe(-1);
             p2.Recebe(4);
-            this.TotalCoins += 4;
+            this.TotalCoins += 3;
         }
         if (!p1.IsPlaying() && !p2.IsPlaying())
         {
@@ -51,6 +51,24 @@ public class World
         Round++;
     }
 
+    public void Run(int rodadas)
+    {
+        Random rand = new Random();
+        BasePlayer? p1;
+        BasePlayer? p2;
+        for (int i = 0; i < rodadas; i++)
+        {
+        do
+        {
+            p1 = this.People[rand.Next(0, this.People.Length)];
+            p2 = this.People[rand.Next(0, this.People.Length)];
+        } while (p1.Coin == 0 || p2.Coin == 0 || p1 == p2);
+        this.Play(p1, p2);
+        }
+        Console.WriteLine($"Total de Moedas: {this.TotalCoins}");
+        Console.WriteLine($"Faliram: {this.Poor}");
+    }
+
     public World
     (
         int GoodPlayers,
@@ -64,6 +82,7 @@ public class World
     )
     {
         int TotalPlayers = GoodPlayers + BadPlayers + SpitefulPlayers + SafePlayers + RandomPlayers + FlipPlayers + ReflexPlayers + DetectivePlayers;
+        this.TotalCoins = TotalPlayers;
         this.People = new BasePlayer[TotalPlayers];
         for (int i = 0; i < GoodPlayers; i++)
         {

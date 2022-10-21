@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "S:\\COM\\Human_Resources\\01.Engineering_Tech_School\\02.Internal\\10 - Aprendizes\\14 - Desenvolvimento de sistemas 2022\\Leonardo Falango\\C#\\prisoners-dilemma-csharp\\prisoners-dilemma-csharp.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\leonardo falango\\prisoners-dilemma-csharp.csproj": {}
   },
   "projects": {
-    "S:\\COM\\Human_Resources\\01.Engineering_Tech_School\\02.Internal\\10 - Aprendizes\\14 - Desenvolvimento de sistemas 2022\\Leonardo Falango\\C#\\prisoners-dilemma-csharp\\prisoners-dilemma-csharp.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\leonardo falango\\prisoners-dilemma-csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\COM\\Human_Resources\\01.Engineering_Tech_School\\02.Internal\\10 - Aprendizes\\14 - Desenvolvimento de sistemas 2022\\Leonardo Falango\\C#\\prisoners-dilemma-csharp\\prisoners-dilemma-csharp.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\leonardo falango\\prisoners-dilemma-csharp.csproj",
         "projectName": "prisoners-dilemma-csharp",
-        "projectPath": "S:\\COM\\Human_Resources\\01.Engineering_Tech_School\\02.Internal\\10 - Aprendizes\\14 - Desenvolvimento de sistemas 2022\\Leonardo Falango\\C#\\prisoners-dilemma-csharp\\prisoners-dilemma-csharp.csproj",
-        "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "S:\\COM\\Human_Resources\\01.Engineering_Tech_School\\02.Internal\\10 - Aprendizes\\14 - Desenvolvimento de sistemas 2022\\Leonardo Falango\\C#\\prisoners-dilemma-csharp\\obj\\",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\leonardo falango\\prisoners-dilemma-csharp.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\leonardo falango\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,8 +49,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

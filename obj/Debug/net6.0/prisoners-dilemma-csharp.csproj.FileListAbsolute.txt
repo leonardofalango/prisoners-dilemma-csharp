@@ -13,3 +13,18 @@ S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14
 S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Leonardo Falango\C#\prisoners-dilemma-csharp\obj\Debug\net6.0\prisoners-dilemma-csharp.pdb
 S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Leonardo Falango\C#\prisoners-dilemma-csharp\obj\Debug\net6.0\prisoners-dilemma-csharp.genruntimeconfig.cache
 S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Leonardo Falango\C#\prisoners-dilemma-csharp\obj\Debug\net6.0\ref\prisoners-dilemma-csharp.dll
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\prisoners-dilemma-csharp.exe
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\prisoners-dilemma-csharp.deps.json
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\prisoners-dilemma-csharp.runtimeconfig.json
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\prisoners-dilemma-csharp.dll
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\ref\prisoners-dilemma-csharp.dll
+C:\Users\Aluno\Desktop\leonardo falango\bin\Debug\net6.0\prisoners-dilemma-csharp.pdb
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.dll
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\ref\prisoners-dilemma-csharp.dll
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.pdb
+C:\Users\Aluno\Desktop\leonardo falango\obj\Debug\net6.0\prisoners-dilemma-csharp.genruntimeconfig.cache
