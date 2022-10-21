@@ -126,6 +126,10 @@ public class DetectivePlayer : BasePlayer
             isBad = true;
         else if (round == 4 && value == 2)
             isBad = false;
+        if (value == -1)
+            lastPlay = false;
+        else
+            lastPlay = true;
         round++;
     }
 }
