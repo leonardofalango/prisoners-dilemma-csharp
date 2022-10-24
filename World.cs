@@ -2,7 +2,7 @@
 public class World
 {
     public BasePlayer[] People { get; set; }
-    public int TotalCoins { get; set; }
+    public int TotalCoin { get; set; }
     public int Round { get; set; }
     public int Poor { get; set; }
     public void Play(BasePlayer p1, BasePlayer p2)
@@ -15,7 +15,7 @@ public class World
             p2.Coin += 1;
             p1.Recebe(1);
             p2.Recebe(1);
-            this.TotalCoins += 2;
+            this.TotalCoin += 2;
         }
 
         if (p1.IsPlaying() && !p2.IsPlaying())
@@ -24,7 +24,7 @@ public class World
             p2.Coin -= 1;
             p1.Recebe(3);
             p2.Recebe(-1);
-            this.TotalCoins += 3;
+            this.TotalCoin += 3;
         }
         if (!p1.IsPlaying() && p2.IsPlaying())
         {
@@ -32,7 +32,7 @@ public class World
             p2.Coin += 4;
             p1.Recebe(-1);
             p2.Recebe(4);
-            this.TotalCoins += 3;
+            this.TotalCoin += 3;
         }
         if (!p1.IsPlaying() && !p2.IsPlaying())
         {
@@ -65,41 +65,44 @@ public class World
         } while (p1.Coin == 0 || p2.Coin == 0 || p1 == p2);
         this.Play(p1, p2);
         }
-        Console.WriteLine($"Total de Moedas: {this.TotalCoins}");
+        Console.WriteLine($"Total de Moedas: {this.TotalCoin}");
         Console.WriteLine($"Faliram: {this.Poor}");
     }
 
     public World
     (
-        int GoodPlayers,
-        int BadPlayers,
-        int SpitefulPlayers,
-        int SafePlayers,
-        int RandomPlayers,
-        int FlipPlayers,
-        int ReflexPlayers,
-        int DetectivePlayers
+        int Coin,
+        int GoodPlayers = 0,
+        int BadPlayers = 0,
+        int SpitefulPlayers = 0,
+        int SafePlayers = 0,
+        int RandomPlayers = 0,
+        int FlipPlayers = 0,
+        int ReflexPlayers = 0,
+        int DetectivePlayers = 0,
+        int ProbabilisticPlayers = 0,
+        double ProbabilisticPlayers_percentage = 25
     )
     {
-        int TotalPlayers = GoodPlayers + BadPlayers + SpitefulPlayers + SafePlayers + RandomPlayers + FlipPlayers + ReflexPlayers + DetectivePlayers;
-        this.TotalCoins = TotalPlayers;
+        int TotalPlayers = GoodPlayers + BadPlayers + SpitefulPlayers + SafePlayers + RandomPlayers + FlipPlayers + ReflexPlayers + DetectivePlayers + ProbabilisticPlayers;
+        this.TotalCoin = TotalPlayers;
         this.People = new BasePlayer[TotalPlayers];
         for (int i = 0; i < GoodPlayers; i++)
         {
             GoodPlayer p = new GoodPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
         for (int i = GoodPlayers; i < GoodPlayers + BadPlayers; i++)
         {
             BadPlayer p = new BadPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
         for (int i = GoodPlayers + BadPlayers; i < GoodPlayers + BadPlayers + SpitefulPlayers; i++)
         {
             SpitefulPlayer p = new SpitefulPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
         for (
@@ -109,7 +112,7 @@ public class World
         )
         {
             SafePlayer p = new SafePlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
 
@@ -120,7 +123,7 @@ public class World
         )
         {
             RandomPlayer p = new RandomPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
 
@@ -131,7 +134,7 @@ public class World
         )
         {
             RandomPlayer p = new RandomPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
 
@@ -142,7 +145,7 @@ public class World
         )
         {
             FlipPlayer p = new FlipPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
 
@@ -153,7 +156,7 @@ public class World
         )
         {
             ReflexPlayer p = new ReflexPlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
             this.People[i] = p;
         }
         for (
@@ -163,7 +166,17 @@ public class World
         )
         {
             DetectivePlayer p = new DetectivePlayer();
-            p.Coin = 1;
+            p.Coin = Coin;
+            this.People[i] = p;
+        }
+        for (
+            int i = GoodPlayers + BadPlayers + SpitefulPlayers + SafePlayers + RandomPlayers + FlipPlayers + ReflexPlayers + DetectivePlayers;
+            i < GoodPlayers + BadPlayers + SpitefulPlayers + SafePlayers + RandomPlayers + FlipPlayers + ReflexPlayers + DetectivePlayers + ProbabilisticPlayers;
+            i++
+        )
+        {
+            ProbabilisticPlayer p = new ProbabilisticPlayer(ProbabilisticPlayers_percentage);
+            p.Coin = Coin;
             this.People[i] = p;
         }
 
